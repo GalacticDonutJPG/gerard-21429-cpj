@@ -1,0 +1,474 @@
+/* **********************************************************
+ * default style that take care of the default layout 
+ * and typography.
+ * ********************************************************** */
+
+/* **********************************************************
+ * let's get started and do a default reset
+ * ********************************************************** */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+/* **********************************************************
+ * now let's take care of our main layout and content
+ *
+ * 1. header and main-navigation
+ * 2.1 weekly
+ * 2.2 repository
+ * 2.3 misc
+ * 3. footer
+ * 4. main layout
+ * 
+ * ********************************************************** */
+
+/* cover-home */
+
+
+article {
+  display: table;
+  margin: 4.1vw;
+}
+
+
+
+header {
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  color: var(--color-2);
+  height: var(--header__height);
+}
+
+main {
+  margin-top: var(--header__height);
+  font-family: 'manrope';
+}
+
+
+/* 2.1 weekly */
+
+.weekly ul {
+  margin-bottom: var(--spacing-l);
+}
+
+.weekly h2 {
+  font-weight: 500;
+
+}
+
+.weekly ul li {
+  border-bottom: 1px solid var(--color-0);
+}
+
+.weekly ul li:first-child {
+  border-top: 1px solid var(--color-0);
+}
+
+.weekly ul li a {
+  padding: var(--spacing-xs);
+  transition: padding-left 0.3s;
+  display: block;
+  color: var(--color-0);
+}
+
+.weekly ul li a:hover {
+  padding-left: var(--spacing-s);
+}
+
+
+/* 2.2 repository */
+
+.repo {
+  margin-bottom: var(--spacing-l);
+}
+
+.repo h2 {
+  margin-bottom: var(--spacing-s);
+}
+
+.repo__list ul {
+  border-top: solid var(--color-2) 1px;
+  padding-top: var(--spacing-s);
+  padding-bottom: var(--spacing-m);
+}
+
+.repo__item ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.repo__item ul li img {
+  max-height: 12rem;
+}
+
+.repo__item ul li p {
+  font-size: var(--font-size-s);
+}
+
+.repo__item ul li:nth-child(1) {
+  padding-right: var(--spacing-s);
+  width: 25%;
+}
+
+.repo__item ul li:nth-child(2) {
+  padding-right: var(--spacing-s);
+  font-style: italic;
+  width: 30%;
+}
+
+.repo__item ul li:nth-child(3) {
+  width: 45%;
+}
+
+@media (orientation: portrait) {
+  .repo__item ul {
+    display: block;
+  }
+
+  .repo__item ul li:nth-child(n) {
+    margin-top: var(--spacing-m);
+    width: 90%;
+  }
+}
+
+/* 2.3 image with caption */
+
+figcaption p {
+  margin-top: var(--spacing-xs);
+  font-size: var(--font-size-s);
+  font-style: italic;
+  width: 80%;
+}
+
+figcaption p b {
+  font-weight: 700;
+  font-size: inherit;
+}
+
+/*
+ * image filters
+ * https://www.w3schools.com/cssref/css3_pr_filter.php
+ */
+.img__bw {
+  filter: grayscale(100%);
+}
+
+/* 2.4 misc */
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+  top: var(--spacing-l);
+}
+
+.scroll__top {
+  margin: var(--spacing-m) auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.scroll__top a {
+  font-size: 1.25rem;
+  padding: 1rem;
+  transition: color 0.3s;
+  color: var(--color-nav-link);
+}
+
+.embed__video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.embed__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 3. footer */
+
+footer {
+  min-height: 12rem;
+  text-align: center;
+  padding-top: var(--spacing-m);
+}
+
+/* 4. main layout */
+
+.row {
+  align-items: start;
+}
+
+.row,
+.row>ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  gap: var(--spacing-m);
+}
+
+.row__no-gap {
+  gap: 0;
+}
+
+.column,
+.row>ul>li {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.column__half {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 50%;
+}
+
+.column__double {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.type__content {
+  margin-left: var(--spacing-m);
+  margin-right: var(--spacing-m);
+  margin-bottom: var(--spacing-l);
+}
+
+/* **********************************************************
+ * Main typography
+ * ********************************************************** */
+
+/*gerard custom */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  margin-bottom: var(--spacing-l);
+}
+
+a {
+  text-decoration: none;
+  font-size: var(--font-size-m);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* **********************************************************
+ * Paragraph styling
+ * ********************************************************** */
+
+
+p {
+  font-size: var(--font-size-m);
+}
+
+
+p a {
+  font-size: var(--font-size-m);
+}
+
+a {
+  color: var(--color-link);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration-color: transparent;
+}
+
+p:not(:last-child) {
+  margin-bottom: var(--spacing-m);
+}
+
+.p__size-l {
+  font-size: var(--font-size-l);
+}
+
+.p__size-m {
+  font-size: var(--font-size-m);
+}
+
+.p__size-s {
+  font-size: var(--font-size-s);
+}
+
+.p__size-xs {
+  font-size: var(--font-size-xs);
+}
+
+.p__width-l {
+  width: 100%;
+}
+
+.p__width-m {
+  width: 60%;
+  min-width: 20rem;
+}
+
+.p__width-s {
+  width: 40%;
+  min-width: 15rem;
+}
+
+.p__width-xs {
+  width: 20%;
+  min-width: 10rem;
+}
+
+@media (orientation: portrait) {
+  .p__size-l {
+    font-size: var(--font-size-m);
+  }
+
+  .p__size-m {
+    font-size: var(--font-size-m);
+  }
+
+
+}
+
+/* **********************************************************
+ * special features           
+ * 1. lightbox
+ * ********************************************************** */
+
+
+/* 1. lightbox
+ * click on an image (must implement class="zoom") to go full size 
+ * from: https://code-boxx.com/image-zoom-css-javascript
+ */
+
+#lightbox {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  align-items: center;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity ease 0.3s;
+}
+
+#lightbox.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+#lightbox img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.zoom {
+  cursor: pointer;
+}
+
+/* ********************************************************** */
+/* debug, when enabled, useful to see the layout-boxes for    */
+/* sections and divs.                                         */
+/* set border to 1px below
+/* ********************************************************** */
+
+section,
+div,
+ul,
+li {
+  border: 0px solid;
+}
+
+.outline {
+  border: 1px dotted black;
+}
+
+.image-container {
+  display: block;
+}
+
+.mobile-container {
+  display: none;
+}
+
+@media (max-width:768px) {
+
+  .image-container {
+    display: none;
+  }
+
+  .mobile-container {
+    display:contents;
+    align-items: center;
+    justify-content:center;
+
+  }
+
+  .overlay-img-mobile{
+    width: 88.4%;
+margin: auto;
+
+  }
+
+}

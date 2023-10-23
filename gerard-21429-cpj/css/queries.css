@@ -1,0 +1,73 @@
+/* **********************************************************
+ * rules for media queries when in portrait (mobile) mode 
+ * ********************************************************** */
+
+
+@media (orientation: portrait) {
+
+    /* **********************************************************
+ * mobile layout adjustments
+ * ********************************************************** */
+
+
+    :root {
+        --font-size-title: 1.0rem;
+        --spacing-xs: 0.5rem;
+        --spacing-s: 0.75rem;
+        --spacing-m: 1.5rem;
+        --spacing-l: 4rem;
+        --spacing-xl: 8rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .sticky {
+        position: relative;
+        top: auto;
+    }
+    
+    .column,
+    .row ul li {
+        display: flex;
+        flex: auto;
+        width:100%;
+    }
+
+
+    /* **********************************************************
+ * media (images, video)
+ * ********************************************************** */
+
+
+    .img__cover-50,
+    .img__cover-67,
+    .img__cover-75,
+    .img__cover-100 {
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+
+
+    .img__cover-50 {
+        height: 50vh;
+    }
+
+    .img__cover-67 {
+        height: 67vh;
+    }
+
+    .img__cover-75 {
+        height: 75vh;
+    }
+
+    .p__size-l {
+        font-size: var(--font-size-m);
+    }
+    
+    .mobile__hide {
+        display: none;
+    }
+}

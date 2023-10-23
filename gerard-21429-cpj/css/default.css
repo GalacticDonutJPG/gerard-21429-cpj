@@ -1,0 +1,472 @@
+/* **********************************************************
+ * common styles including (padding, margin) spacing 
+ * and colors. 
+ * ********************************************************** */
+
+:root {
+
+  /* font-size */
+  --font-size-xs: 0.7rem;
+  --font-size-s: 0.85rem;
+  --font-size-m: 1.15rem; /* default font-size used */
+  --font-size-l: 1.5rem;
+  --font-size-xl: 3.5rem;
+  --font-size-xxl: 5.5rem;
+  --font-size-title: 1rem;
+
+  --font-weight-title: 700;
+
+  /* spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-s: 1rem;
+  --spacing-m: 2rem;
+  --spacing-l: 3rem;
+  --spacing-xl: 6rem;
+  --spacing-xxl: 12rem;
+
+  /* color */
+  --color-0: #212A30;
+  --color-1: #90E39A;
+  --color-2: #212A30;
+  --color-3: #FF7BAC;
+  --color-4: #DDF093;
+  --color-5: #B7ADCF;
+  --color-6: #32A287;
+  --color-7: lime;
+  --color-8: green;
+  --color-9: darkgreen;
+  --color-10: dodgerblue;
+  --color-11: blue;
+
+  --color-fg: #212A30;
+  --color-bg: #65AFFF;
+  --color-header-bg: #EFEFEF;
+  --color-header-fg: #B7ADCF;
+  --color-title: orange;
+  --color-link:var(--color-0);
+  --color-link-hover: var(--color-6);
+  --color-nav-link: var(--color-2);
+  --color-nav-link-hover: var(--color-3);
+
+  --header__height: 2rem;
+}
+
+/* **********************************************************
+ * Custom margin and padding sizes
+ * ********************************************************** */
+
+.margin__auto {
+  margin: auto;
+}
+
+.margin__top-s {
+  margin-top: var(--spacing-s);
+}
+
+.margin__top-m {
+  margin-top: var(--spacing-m);
+}
+
+.margin__top-l {
+  margin-top: var(--spacing-l);
+}
+
+.margin__top-xl {
+  margin-top: var(--spacing-xl);
+}
+
+.margin__bottom-s {
+  margin-bottom: var(--spacing-s);
+}
+
+.margin__bottom-m {
+  margin-bottom: var(--spacing-m);
+}
+
+.margin__bottom-l {
+  margin-bottom: var(--spacing-l);
+}
+
+.margin__bottom-xl {
+  margin-bottom: var(--spacing-xl);
+}
+
+.margin__left-s {
+  margin-left: var(--spacing-s);
+}
+
+.margin__left-m {
+  margin-left: var(--spacing-m);
+}
+
+.margin__left-l {
+  margin-left: var(--spacing-l);
+}
+
+.margin__left-xl {
+  margin-left: var(--spacing-xl);
+}
+
+.margin__right-s {
+  margin-right: var(--spacing-s);
+}
+
+.margin__right-m {
+  margin-right: var(--spacing-m);
+}
+
+.margin__right-l {
+  margin-right: var(--spacing-l);
+}
+
+.margin__right-xl {
+  margin-right: var(--spacing-xl);
+}
+
+.margin__y-xl {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.margin__y-l {
+  margin-top: var(--spacing-l);
+  margin-bottom: var(--spacing-l);
+}
+
+.margin__y-m {
+  margin-top: var(--spacing-m);
+  margin-bottom: var(--spacing-m);
+}
+
+.margin__y-s {
+  margin-top: var(--spacing-s);
+  margin-bottom: var(--spacing-s);
+}
+
+.margin__x-xl {
+  margin-left: var(--spacing-xl);
+  margin-right: var(--spacing-xl);
+}
+
+.margin__x-l {
+  margin-left: var(--spacing-l);
+  margin-right: var(--spacing-l);
+}
+
+.margin__x-m {
+  margin-left: var(--spacing-m);
+  margin-right: var(--spacing-m);
+}
+
+.margin__x-s {
+  margin-left: var(--spacing-s);
+  margin-right: var(--spacing-s);
+}
+
+.margin__xl {
+  margin: var(--spacing-xl);
+}
+
+.margin__l {
+  margin: var(--spacing-l);
+}
+
+.margin__m {
+  margin: var(--spacing-m);
+}
+
+.margin__s {
+  margin: var(--spacing-s);
+}
+
+.padding__top-s {
+  padding-top: var(--spacing-s);
+}
+
+.padding__top-m {
+  padding-top: var(--spacing-m);
+}
+
+.padding__top-l {
+  padding-top: var(--spacing-l);
+}
+
+.padding__top-xl {
+  padding-top: var(--spacing-xl);
+}
+
+.padding__bottom-s {
+  padding-bottom: var(--spacing-s);
+}
+
+.padding__bottom-m {
+  padding-bottom: var(--spacing-m);
+}
+
+.padding__bottom-l {
+  padding-bottom: var(--spacing-l);
+}
+
+.padding__bottom-xl {
+  padding-bottom: var(--spacing-xl);
+}
+
+.padding__x-xl {
+  padding-left: var(--spacing-xl);
+  padding-right: var(--spacing-xl);
+}
+
+.padding__x-l {
+  padding-left: var(--spacing-l);
+  padding-right: var(--spacing-l);
+}
+
+.padding__x-m {
+  padding-left: var(--spacing-m);
+  padding-right: var(--spacing-m);
+}
+
+.padding__x-s {
+  padding-left: var(--spacing-s);
+  padding-right: var(--spacing-s);
+}
+
+.padding__y-xl {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.padding__y-l {
+  padding-top: var(--spacing-l);
+  padding-bottom: var(--spacing-l);
+}
+
+.padding__y-m {
+  padding-top: var(--spacing-m);
+  padding-bottom: var(--spacing-m);
+}
+
+.padding__y-s {
+  padding-top: var(--spacing-s);
+  padding-bottom: var(--spacing-s);
+}
+
+.padding__xl {
+  padding: var(--spacing-xl);
+}
+
+.padding__l {
+  padding: var(--spacing-l);
+}
+
+.padding__m {
+  padding: var(--spacing-m);
+}
+
+.padding__s {
+  padding: var(--spacing-s);
+}
+
+.height__s {
+  min-height: 25vh;
+}
+
+.height__m {
+  min-height: 50vh;
+}
+
+.height__l {
+  min-height: 75vh;
+}
+
+.height__xl {
+  min-height: 100vh;
+}
+
+.height__half {
+  min-height: 50vh;
+}
+
+.height__all {
+  min-height: 100vh;
+}
+
+.width__all {
+  max-width: 100%;
+}
+
+.width__half {
+  max-width: 50%;
+}
+
+.width__xl {
+  max-width: 96rem;
+}
+
+.width__l {
+  max-width: 72rem;
+}
+
+.width__m {
+  max-width: 64rem;
+}
+
+.width__s {
+  max-width: 54rem;
+}
+
+.width__xs {
+  max-width: 32rem;
+}
+
+/* **********************************************************
+ * Custom colors
+ * ********************************************************** */
+
+.color__bg-0 {
+  background: var(--color-0) !important;
+}
+
+.color__bg-1 {
+  background: var(--color-1) !important;
+}
+
+.color__bg-2 {
+  background: var(--color-2) !important;
+}
+
+.color__bg-3 {
+  background: var(--color-3) !important;
+}
+
+.color__bg-4 {
+  background: var(--color-4) !important;
+}
+
+.color__bg-5 {
+  background: var(--color-5) !important;
+}
+
+.color__bg-6 {
+  background: var(--color-6) !important;
+}
+
+.color__bg-7 {
+  background: var(--color-7) !important;
+}
+
+.color__bg-8 {
+  background: var(--color-8) !important;
+}
+
+.color__bg-9 {
+  background: var(--color-9) !important;
+}
+
+.color__bg-10 {
+  background: var(--color-10) !important;
+}
+
+.color__fg-0 {
+  color: var(--color-0) !important;
+}
+
+.color__fg-1 {
+  color: var(--color-1) !important;
+}
+
+.color__fg-2 {
+  color: var(--color-2) !important;
+}
+
+.color__fg-3 {
+  color: var(--color-3) !important;
+}
+
+.color__fg-4 {
+  color: var(--color-4) !important;
+}
+
+.color__fg-5 {
+  color: var(--color-5) !important;
+}
+
+.color__fg-6 {
+  color: var(--color-6) !important;
+}
+
+.color__fg-7 {
+  color: var(--color-7) !important;
+}
+
+.color__fg-8 {
+  color: var(--color-8) !important;
+}
+
+.color__fg-9 {
+  color: var(--color-9) !important;
+}
+
+.color__fg-10 {
+  color: var(--color-10) !important;
+}
+
+.font__size-xs {
+  font-size: var(--font-size-xs);
+}
+
+.font__size-s {
+  font-size: var(--font-size-s);
+}
+
+.font__size-m {
+  font-size: var(--fontsize-m);
+}
+
+.font__size-l {
+  font-size: var(--font-size-l);
+}
+
+.font__size-xl {
+  font-size: clamp(2rem, 10vw, var(--font-size-xl));
+}
+
+.font__size-xxl {
+  font-size: clamp(2rem, 16vw, var(--font-size-xxl));
+}
+
+.font__weight-100 {
+  font-weight: 100;
+}
+
+.font__weight-200 {
+  font-weight: 200;
+}
+
+.font__weight-300 {
+  font-weight: 300;
+}
+
+.font__weight-400 {
+  font-weight: 400;
+}
+
+.font__weight-500 {
+  font-weight: 500;
+}
+
+.font__weight-600 {
+  font-weight: 600;
+}
+
+.font__weight-700 {
+  font-weight: 700;
+}
+
+.font__weight-800 {
+  font-weight: 800;
+}
+
+.font__weight-900 {
+  font-weight: 900;
+}

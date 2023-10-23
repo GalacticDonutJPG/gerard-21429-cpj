@@ -1,0 +1,77 @@
+/* **********************************************************
+ * add custom styles after imports below
+ * ********************************************************** */
+
+@import "default.css";
+@import "layout.css";
+@import "menu.css";
+@import "queries.css";
+
+/* **********************************************************
+ * to import a font, use the @import option, you can find
+ * lots of font options at fonts.google.com for example.
+ * ********************************************************** */
+
+ @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Exo&family=IBM+Plex+Mono&family=Manrope&family=Tenor+Sans&family=VT323&display=swap');
+
+
+html {
+    font-family: 'Manrope', sans-serif;
+    /* font-family: 'IBM Plex Mono', monospace; */
+}
+
+
+/* **********************************************************
+ * Customizing
+ *
+ * changes to default settings like colors, typography,
+ * spacing can be made in default.css
+ *
+ * other custom settings, start below
+ *
+ * ********************************************************** */
+
+* {
+    /* font-size: 16px; */
+    line-height: 115%;
+    font-weight: 400;
+}
+
+body {
+    background-color: #90E39A;
+    color: var(--color-fg);
+}
+
+
+@media (orientation: portrait) {
+    * {
+        font-size: 16px;
+
+        
+        
+    }
+}
+
+/* animation */
+
+/* gerard's customs */
+
+
+
+@font-face {
+    font-family: "5th Avenue";
+    src: url('assets/fonts/5thAvenue.woff2') format(woff2);
+    src: url('assets/assets/fonts/5thAvenue-Italic.woff2') format(woff2);
+    src: url('assets/fonts/5thAvenue.woff2') format(woff2);
+}
+
+
+
+.overlay-img {
+    z-index: 1;
+    position: auto;
+    width: auto;
+margin-top: -3%;
+}
+
+

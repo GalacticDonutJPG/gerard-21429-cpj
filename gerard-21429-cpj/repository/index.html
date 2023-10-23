@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Symphony Sphere</title>
+  <link rel="icon" href="/icons8-oculus-rift-16.ico" type="image/x-icon">
+
+  <!-- Meta information, for machines to read, SEO. @see ref-0  -->
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="Author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- Load StyleSheets -->
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+
+<body>
+  <!-- header section, menu and title. @see ref-1 -->
+<!-- header section, menu and title. @see ref-1 -->
+<header>
+
+  <nav class="main__nav-bar">
+    <ul class="main__nav-title">
+      <a href="/index.html"><img src="/assets/images/icon.svg" height=30vh alt=""></a>
+      <!-- <li class="mobile__hide">gerard quintana</li> -->
+    </ul>
+    <ul class="main__nav-list">
+      <li class="main__nav-item"><a href="/">index</a></li>
+      <li class="main__nav-item"><a href="/repository">repository</a></li>
+      <li class="main__nav-item"><a href="/about">about</a></li>
+      </li>
+    </ul>
+    <div class="main__nav-ham">
+      <span class="main__nav-ham-bar"></span>
+      <span class="main__nav-ham-bar"></span>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- main section, all your content. @see ref-2 -->
+  <main>
+    <article>
+      <section id="intro">
+        <!-- <div class="row color__bg-6 height__half margin__m">
+          <div class="column"></div>
+        </div> -->
+      </section>
+
+      <section id="repository">
+        <div class="row padding__top-xl margin__m">
+          <div class="column sticky padding__top-xxs margin__right-xl">
+            <h2>Repository</h2>
+            <p class="p__size-m">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste
+              fugiat facilis praesentium necessitatibus, earum eligendi odio. Possimus vel, totam
+              aspernatur magnam velit consequatur iure consectetur dolorum id quam soluta.
+            </p>
+          </div>
+
+          <div class="column__double height__all">
+            <p class="p__size-l">
+              Find a selection of resources below, for a full list of resources, take a look at my
+              <a href="" target="_blank">are.na archive</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+              unde, eos rerum
+              perferendis ipsum explicabo. Sunt quis minima vel suscipit aut error maiores. Hic
+              eligendi deserunt excepturi unde. Earum, beatae?
+            </p>
+            <div class="padding__top-l">
+              <!-- auto generated content, see repo.json file -->
+              <div id="repo-books" class="repo"></div>
+              <div id="repo-articles" class="repo"></div>
+              <div id="repo-casestudies" class="repo"></div>
+              <div id="repo-experiments" class="repo"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="repo-content-map">
+        <div class="margin__top-l">
+          <img src="/assets/images/test.jpg" class="img__cover-67 zoom" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div>a project by gerard ☺︎</div>
+    <div class="scroll__top"><a href="javascript:scrollToTop();">↑</a></div>
+  </footer>
+
+  <div id="lightbox"></div>
+  <script src="../js/main.js"></script>
+
+  <script>
+    loadJSON("./repo.json", generateRepoItemsFrom, logErrorMessage);
+  </script>
+</body>
+
+</html>

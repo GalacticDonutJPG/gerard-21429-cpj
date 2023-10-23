@@ -1,0 +1,46 @@
+{
+  "books": [
+    {
+      "title":"Some Title",
+      "author":"Some Author",
+      "reference":"Smith, John A. The Art of Fiction Writing. PublisherX, 2023.",
+      "thumbnail":"book.jpg",
+      "description":"In this fictional example, Smith is the author's last name, John A. is the author's first name and middle initial, 'The Art of Fiction Writing' is the title of the book, 'PublisherX' is the name of the publisher, and '2023' is the publication year.",
+      "link":"https://lasallesodc.show"
+    },
+    {
+      "title":"Some Title 2",
+      "author":"Some Author 2",
+      "reference":"Reference, MLA 2",
+      "thumbnail":"book.jpg",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat odio earum nobis. Perspiciatis, fugit accusamus! Suscipit, at? Mollitia suscipit minima commodi sit autem beatae nobis officiis, saepe ut! Inventore!"
+    }
+  ],
+  "articles": [
+    {
+      "title":"Some article title",
+      "author":"Some Author 2",
+      "reference":"Reference, MLA 2",
+      "thumbnail":"article.jpg",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat odio earum nobis. Perspiciatis, fugit accusamus! Suscipit, at? Mollitia suscipit minima commodi sit autem beatae nobis officiis, saepe ut! Inventore!"
+    }
+  ],
+  "casestudies": [
+    {
+      "title":"Some case study title",
+      "author":"Some Author ",
+      "reference":"Reference, MLA 2",
+      "thumbnail":"case-study.jpg",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat odio earum nobis. Perspiciatis, fugit accusamus! Suscipit, at? Mollitia suscipit minima commodi sit autem beatae nobis officiis, saepe ut! Inventore!"
+    }
+  ],
+  "experiments":[
+    {
+      "title":"Some Experiment title",
+      "author":"Some Author",
+      "reference":"Reference, MLA 2",
+      "thumbnail":"experiment.jpg",
+      "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat odio earum nobis. Perspiciatis, fugit accusamus! Suscipit, at? Mollitia suscipit minima commodi sit autem beatae nobis officiis, saepe ut! Inventore!"
+    }
+  ]
+}
